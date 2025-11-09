@@ -21,7 +21,7 @@ active_params = [key for key, value in param_ranges.items() if not key.startswit
 active_ranges = [param_ranges[key] for key in active_params]
 
 # Choose a colormap 
-cmap = cm.get_cmap('cool')  
+cmap = cm._colormaps['cool']
 
 # Generate evenly spaced values for each parameter
 param_val_lists = []
